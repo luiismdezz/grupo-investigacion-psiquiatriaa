@@ -7168,6 +7168,31 @@ section.contacto-mensaje .contacto-boton:hover {
         margin: 0 !important;
         box-sizing: border-box !important;
     }
+        /* Submenú de Equipo e Investigación en móvil */
+    nav.menu-principal.menu-abierto .submenu {
+        position: static !important;
+        display: flex !important;
+        width: 100% !important;
+        height: auto !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        background: transparent !important;
+        box-shadow: none !important;
+    }
+
+    nav.menu-principal.menu-abierto .submenu a {
+        display: flex !important;
+        width: 90% !important;
+        height: 40px !important;
+        min-height: 40px !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding: 8px !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
+    }
 }
 /* ==========================================
    TARJETAS DE EQUIPO EN MÓVIL
