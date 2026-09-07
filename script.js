@@ -488,3 +488,28 @@ function cerrarNoticia(id) {
         noticia.style.display = "none";
     }
 }
+// CONTADOR DE CIFRAS
+document.querySelectorAll(".numero-contador").forEach(function(contador) {
+
+    const objetivo = Number(contador.dataset.numero);
+    let numero = 0;
+
+    const duracion = 1200;
+    const pasos = 40;
+    const incremento = objetivo / pasos;
+    const intervalo = duracion / pasos;
+
+    const animacion = setInterval(function() {
+
+        numero += incremento;
+
+        if (numero >= objetivo) {
+            numero = objetivo;
+            clearInterval(animacion);
+        }
+
+        contador.textContent = Math.floor(numero);
+
+    }, intervalo);
+
+});

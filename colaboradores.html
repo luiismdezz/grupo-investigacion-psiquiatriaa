@@ -95,45 +95,66 @@
 
             <div class="tarjetas">
 
+<article class="tarjeta-colaborador" tabindex="0">
 
-                <article class="tarjeta-colaborador">
-                    <img src="imagenes/colaborador1.png" alt="Colaborador 1">
-                    <h3>Jose Manuel Perez</h3>
+    <img src="imagenes/colaborador1.png" alt="José Manuel Pérez">
 
-                    <p>
-                        Informatico
-                        
-                    </p>
-                    Finba
-                </p>
+    <h3>José Manuel Pérez</h3>
 
-                </article>
+    <p>
+        Informático.
+    </p>
 
+    <div class="perfil-extra">
+        <p>
+            <strong>Funciones principales:</strong>
+            Apoyo informático y tecnológico en las actividades del grupo
+            de investigación.
+        </p>
+    </div>
 
-                <article class="tarjeta-colaborador">
-                    <img src="imagenes/colaborador2.png" alt="Colaborador 2">
-                    <h3> Maria Perez Sanchez</h3>
-
-                    <p>
-                        Investigadora colaboradora del Grupo de Investigación en Psiquiatría.
-                    
-                    </p>
-                    Funciones principales: Coordinación de proyectos de investigación y análisis de datos.
-                    </p>
-
-                </article>
+</article>
 
 
-               <article class="tarjeta-colaborador">
-                    <img src="imagenes/colaborador3.png" alt="Colaborador 3">
-                    <h3>Colaborador 3</h3>
+                <article class="tarjeta-colaborador" tabindex="0">
 
-                    <p>
-                        Profesional colaborador del Grupo de
-                        Investigación en Psiquiatría.
-                    </p>
+    <img src="imagenes/colaborador2.png" alt="María Pérez Sánchez">
 
-                </article>
+    <h3>María Pérez Sánchez</h3>
+
+    <p>
+        Investigadora colaboradora del Grupo de Investigación en Psiquiatría.
+    </p>
+
+    <div class="perfil-extra">
+        <p>
+            <strong>Funciones principales:</strong>
+            Coordinación de proyectos de investigación y análisis de datos.
+        </p>
+    </div>
+
+</article>
+
+
+              <article class="tarjeta-colaborador" tabindex="0">
+
+    <img src="imagenes/colaborador3.png" alt="Colaborador 3">
+
+    <h3>Colaborador 3</h3>
+
+    <p>
+        Profesional colaborador del Grupo de Investigación en Psiquiatría.
+    </p>
+
+    <div class="perfil-extra">
+        <p>
+            <strong>Funciones principales:</strong>
+            Colaboración en las actividades y proyectos de investigación
+            del grupo.
+        </p>
+    </div>
+
+</article>
 
 
             </div>
@@ -159,7 +180,25 @@
 
 </div>
 
-<script src="script.js"></script>
+<script>
+document.querySelectorAll(".tarjeta-investigador, .tarjeta-colaborador").forEach(function(tarjeta) {
+
+    tarjeta.addEventListener("click", function() {
+
+        const informacion = tarjeta.querySelector(".perfil-extra");
+
+        if (!informacion) return;
+
+        if (informacion.style.display === "block") {
+            informacion.style.display = "none";
+        } else {
+            informacion.style.display = "block";
+        }
+
+    });
+
+});
+</script>
 <a href="equipo.html" class="boton-volver-equipo">
     ← Volver a Equipo
 </a>

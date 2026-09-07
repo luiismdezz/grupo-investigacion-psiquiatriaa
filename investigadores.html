@@ -97,12 +97,24 @@
  <div class="tarjetas">
 
     <article class="tarjeta tarjeta-investigador" tabindex="0">
-       <img src="imagenes/javier.jpg" alt="Javier">
-        <h3>Javier garcia</h3>
+
+    <img src="imagenes/javier.jpg" alt="Javier García">
+
+    <h3>Javier García</h3>
+
+    <p>
+        Miembro del Grupo de Investigación en Psiquiatría.
+    </p>
+
+    <div class="perfil-extra">
+        <p><strong>Información:</strong></p>
         <p>
-            Miembro del Grupo de Investigación en Psiquiatría.
+            Investigador del Grupo de Investigación en Psiquiatría
+            y Salud Mental de la Universidad de Oviedo.
         </p>
-    </article>
+    </div>
+
+</article>
 
     <article class="tarjeta tarjeta-investigador" tabindex="0">
         <img src="imagenes/laura.jpg" alt="Laura">
@@ -110,6 +122,12 @@
         <p>
             Miembro del Grupo de Investigación en Psiquiatría.
         </p>
+        <div class="perfil-extra">
+        <p><strong>Información:</strong></p>
+        <p>
+            AQUÍ PONEMOS LA INFORMACIÓN.
+        </p>
+    </div>
     </article>
 
     <article class="tarjeta tarjeta-investigador" tabindex="0">
@@ -118,6 +136,12 @@
         <p>
             Miembro del Grupo de Investigación en Psiquiatría.
         </p>
+        <div class="perfil-extra">
+        <p><strong>Información:</strong></p>
+        <p>
+            AQUÍ PONEMOS LA INFORMACIÓN.
+        </p>
+    </div>
     </article>
 
 </div>
@@ -151,8 +175,28 @@
     </p>
 </footer>
 
-<script src="script.js"></script>
+    <!-- resto de tu página -->
+
+
+    <script>
+    document.querySelectorAll(".tarjeta-investigador").forEach(function(tarjeta) {
+
+        tarjeta.addEventListener("click", function() {
+
+            const informacion = tarjeta.querySelector(".perfil-extra");
+
+            if (!informacion) return;
+
+            if (informacion.style.display === "block") {
+                informacion.style.display = "none";
+            } else {
+                informacion.style.display = "block";
+            }
+
+        });
+
+    });
+    </script>
 
 </body>
-
 </html>

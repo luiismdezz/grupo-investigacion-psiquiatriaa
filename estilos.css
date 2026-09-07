@@ -7285,3 +7285,973 @@ section.contacto-mensaje .contacto-boton:hover {
     }
 
 }
+/* =========================================
+   NUEVO HERO DE LA PORTADA
+   ========================================= */
+
+.inicio-hero {
+    width: 100%;
+    min-height: 540px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 70px;
+    padding: 70px 8%;
+    box-sizing: border-box;
+    background: #f3f8fb;
+}
+
+.inicio-hero-texto {
+    max-width: 580px;
+}
+
+.inicio-hero-linea {
+    display: block;
+    width: 55px;
+    height: 4px;
+    margin-bottom: 22px;
+    background: #2da4d2;
+    border-radius: 10px;
+}
+
+.inicio-hero-texto h1 {
+    margin: 0;
+    color: #123f5c;
+    font-size: 52px;
+    line-height: 1.08;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.inicio-hero-texto p {
+    margin: 28px 0 32px;
+    color: #536b79;
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 540px;
+}
+
+.inicio-hero-boton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px 25px;
+    background: #174f70;
+    color: white;
+    text-decoration: none;
+    border-radius: 9px;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 8px 20px rgba(23, 79, 112, 0.18);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.inicio-hero-boton:hover {
+    color: white;
+    text-decoration: none;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(23, 79, 112, 0.25);
+}
+
+.inicio-hero-boton span {
+    font-size: 21px;
+}
+
+.inicio-hero-foto {
+    width: 100%;
+    height: 410px;
+    overflow: hidden;
+    border-radius: 24px;
+    box-shadow: 0 15px 40px rgba(0, 50, 80, 0.14);
+}
+
+.inicio-hero-foto img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+
+/* =========================================
+   HERO EN MÓVIL
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    .inicio-hero {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        gap: 35px;
+        padding: 50px 20px;
+    }
+
+    .inicio-hero-texto {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .inicio-hero-linea {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .inicio-hero-texto h1 {
+        font-size: 38px;
+        line-height: 1.1;
+    }
+
+    .inicio-hero-texto p {
+        font-size: 16px;
+        margin: 25px auto 30px;
+    }
+
+    .inicio-hero-boton {
+        margin: 0 auto;
+    }
+
+    .inicio-hero-foto {
+        height: 280px;
+        border-radius: 18px;
+    }
+}
+/* =========================================
+   AJUSTE DE ALTURA DEL HERO
+   ========================================= */
+
+.inicio-hero {
+    min-height: 460px !important;
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+}
+
+.inicio-hero-foto {
+    height: 370px !important;
+}
+/* =========================================
+   TARJETAS A TODO EL ANCHO
+   ========================================= */
+
+main .accesos-inicio {
+    width: 100% !important;
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+    box-sizing: border-box !important;
+}
+
+main .accesos-inicio .tarjeta-acceso {
+    width: 100% !important;
+    max-width: none !important;
+    box-sizing: border-box !important;
+}
+main .accesos-inicio .tarjeta-acceso {
+    min-height: 190px !important;
+    padding: 35px !important;
+}
+
+main .accesos-inicio .texto-acceso h3 {
+    font-size: 24px !important;
+}
+
+main .accesos-inicio .texto-acceso p {
+    font-size: 17px !important;
+    line-height: 1.6 !important;
+}
+/* =========================================
+   ACTUALIDAD - PORTADA
+   ========================================= */
+
+.inicio-actualidad {
+    width: 100%;
+    padding: 70px 5%;
+    box-sizing: border-box;
+    background: #ffffff;
+}
+
+.inicio-seccion-cabecera {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 35px;
+}
+
+.inicio-seccion-linea {
+    display: block;
+    width: 50px;
+    height: 4px;
+    margin-bottom: 14px;
+    background: #2da4d2;
+    border-radius: 10px;
+}
+
+.inicio-seccion-etiqueta {
+    margin: 0 0 5px;
+    color: #2da4d2;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.inicio-seccion-cabecera h2 {
+    margin: 0;
+    color: #123f5c;
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+.inicio-ver-noticias {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #174f70;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.inicio-ver-noticias:hover {
+    color: #2da4d2;
+}
+
+.inicio-ver-noticias span {
+    font-size: 20px;
+}
+
+.inicio-noticias {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.inicio-noticia {
+    display: block;
+    overflow: hidden;
+    background: #f8fbfd;
+    border: 1px solid #e1e8ed;
+    border-radius: 18px;
+    color: inherit;
+    text-decoration: none;
+    box-shadow: 0 8px 25px rgba(0, 50, 80, 0.07);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.inicio-noticia:hover {
+    color: inherit;
+    text-decoration: none;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 50, 80, 0.13);
+}
+
+.inicio-noticia-imagen {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.inicio-noticia-imagen img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.inicio-noticia:hover .inicio-noticia-imagen img {
+    transform: scale(1.04);
+}
+
+.inicio-noticia-contenido {
+    padding: 28px 30px 30px;
+}
+
+.inicio-noticia-fecha {
+    margin: 0 0 10px;
+    color: #2da4d2;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.inicio-noticia-contenido h3 {
+    margin: 0 0 12px;
+    color: #174f70;
+    font-size: 23px;
+    line-height: 1.3;
+}
+
+.inicio-noticia-contenido p:not(.inicio-noticia-fecha) {
+    margin: 0 0 20px;
+    color: #536b79;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.inicio-noticia-enlace {
+    color: #174f70;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   ACTUALIDAD EN MÓVIL
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    .inicio-actualidad {
+        padding: 50px 20px;
+    }
+
+    .inicio-seccion-cabecera {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .inicio-seccion-cabecera h2 {
+        font-size: 30px;
+    }
+
+    .inicio-noticias {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .inicio-noticia-imagen {
+        height: 220px;
+    }
+
+    .inicio-noticia-contenido {
+        padding: 25px;
+    }
+}
+/* =========================================
+   ICONOS DE LOS ACCESOS PRINCIPALES
+   ========================================= */
+
+.accesos-inicio .icono-acceso {
+    position: relative;
+    flex-shrink: 0;
+    width: 68px;
+    height: 68px;
+    min-width: 68px;
+    border-radius: 50%;
+    background: #e1f1f8;
+    color: #17577a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0;
+}
+
+/* Icono Equipo */
+.accesos-inicio .icono-equipo::before,
+.accesos-inicio .icono-equipo::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background: #17577a;
+}
+
+.accesos-inicio .icono-equipo::before {
+    width: 16px;
+    height: 16px;
+    top: 17px;
+    left: 17px;
+    box-shadow: 18px 0 0 #17577a;
+}
+
+.accesos-inicio .icono-equipo::after {
+    width: 22px;
+    height: 12px;
+    bottom: 17px;
+    left: 12px;
+    border-radius: 12px 12px 6px 6px;
+    box-shadow: 18px 0 0 #17577a;
+}
+
+/* Icono Investigación */
+.accesos-inicio .icono-investigacion::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border: 4px solid #17577a;
+    border-radius: 50%;
+    top: 15px;
+    left: 18px;
+    box-sizing: border-box;
+}
+
+.accesos-inicio .icono-investigacion::after {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 4px;
+    background: #17577a;
+    transform: rotate(45deg);
+    left: 38px;
+    top: 42px;
+    border-radius: 5px;
+}
+
+/* Icono Proyectos */
+.accesos-inicio .icono-proyectos::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 22px;
+    border: 3px solid #17577a;
+    border-radius: 3px;
+    left: 17px;
+    top: 25px;
+    box-sizing: border-box;
+}
+
+.accesos-inicio .icono-proyectos::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 6px;
+    background: #17577a;
+    border-radius: 3px 3px 0 0;
+    left: 20px;
+    top: 20px;
+}
+/* =========================================
+   AJUSTE DE COMPOSICIÓN DE LAS TARJETAS
+   ========================================= */
+
+.accesos-inicio .tarjeta-acceso {
+    gap: 28px !important;
+}
+
+.accesos-inicio .texto-acceso {
+    min-width: 0 !important;
+    flex: 1 !important;
+}
+
+.accesos-inicio .texto-acceso h3 {
+    margin-bottom: 10px !important;
+}
+
+.accesos-inicio .flecha-acceso {
+    flex-shrink: 0 !important;
+    padding-left: 10px;
+}
+
+@media (max-width: 700px) {
+
+    .accesos-inicio .tarjeta-acceso {
+        gap: 20px !important;
+    }
+
+    .accesos-inicio .flecha-acceso {
+        padding-left: 5px;
+    }
+}
+/* =========================================
+   CIFRAS A TODO EL ANCHO
+   ========================================= */
+
+main .cifras-inicio {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+    box-sizing: border-box !important;
+}
+
+main .cifras-grid {
+    width: 100% !important;
+    max-width: none !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 25px !important;
+}
+
+main .cifras-grid .cifra {
+    width: 100% !important;
+    max-width: none !important;
+    box-sizing: border-box !important;
+}
+/* =========================================
+   CORRECCIÓN DEL BLOQUE DE CIFRAS
+   ========================================= */
+
+main .cifras-inicio {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 70px 5% !important;
+    box-sizing: border-box !important;
+    background: #f3f8fb !important;
+}
+
+main .cifras-cabecera {
+    width: 100% !important;
+    text-align: center !important;
+    margin: 0 0 40px !important;
+}
+
+main .cifras-cabecera .cifras-linea {
+    display: block !important;
+    width: 50px !important;
+    height: 4px !important;
+    margin: 0 auto 14px !important;
+    background: #2da4d2 !important;
+    border-radius: 10px !important;
+}
+
+main .cifras-cabecera p {
+    margin: 0 0 6px !important;
+    color: #2da4d2 !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    letter-spacing: 1.5px !important;
+}
+
+main .cifras-cabecera h2 {
+    margin: 0 !important;
+    color: #123f5c !important;
+    font-size: 36px !important;
+}
+
+main .cifras-grid {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 25px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+}
+
+main .cifras-grid .cifra {
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: 180px !important;
+    padding: 30px 20px !important;
+    box-sizing: border-box !important;
+    background: #ffffff !important;
+    border: 1px solid #e1e8ed !important;
+    border-radius: 18px !important;
+    box-shadow: 0 8px 25px rgba(0, 50, 80, 0.08) !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+}
+
+main .cifras-grid .numero-contador {
+    display: block !important;
+    margin: 0 0 12px !important;
+    color: #174f70 !important;
+    font-size: 52px !important;
+    line-height: 1 !important;
+    font-weight: 700 !important;
+}
+
+main .cifras-grid .cifra > span {
+    display: block !important;
+    color: #536b79 !important;
+    font-size: 17px !important;
+    font-weight: 600 !important;
+}
+
+
+/* MÓVIL */
+
+@media (max-width: 700px) {
+
+    main .cifras-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 15px !important;
+    }
+
+    main .cifras-inicio {
+        padding: 50px 20px !important;
+    }
+
+    main .cifras-cabecera h2 {
+        font-size: 30px !important;
+    }
+
+    main .cifras-grid .cifra {
+        min-height: 145px !important;
+    }
+
+    main .cifras-grid .numero-contador {
+        font-size: 40px !important;
+    }
+}
+/* =========================================
+   CIFRAS - BLOQUE REALMENTE A TODO EL ANCHO
+   ========================================= */
+
+main .cifras-inicio {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    margin-left: calc(50% - 50vw) !important;
+    margin-right: 0 !important;
+    padding: 70px 6% !important;
+    box-sizing: border-box !important;
+}
+
+main .cifras-grid {
+    width: 100% !important;
+    max-width: none !important;
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 30px !important;
+    box-sizing: border-box !important;
+}
+
+main .cifras-grid .cifra {
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    min-height: 190px !important;
+    padding: 35px 20px !important;
+    box-sizing: border-box !important;
+}
+
+main .cifras-grid .cifra > span {
+    white-space: normal !important;
+    text-align: center !important;
+}
+
+
+/* MÓVIL */
+
+@media (max-width: 700px) {
+
+    main .cifras-inicio {
+        width: 100vw !important;
+        max-width: 100vw !important;
+        margin-left: calc(50% - 50vw) !important;
+        padding: 50px 20px !important;
+    }
+
+    main .cifras-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 15px !important;
+    }
+}
+/* =========================================
+   CORRECCIÓN DEFINITIVA - CIFRAS
+   ========================================= */
+
+main .cifras-inicio {
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+
+    width: 100vw !important;
+    max-width: 100vw !important;
+
+    margin-left: calc((100% - 100vw) / 2) !important;
+    margin-right: 0 !important;
+
+    padding: 70px 6% !important;
+    box-sizing: border-box !important;
+}
+
+main .cifras-grid {
+    width: 100% !important;
+    max-width: none !important;
+
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 30px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+main .cifras-grid .cifra {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: none !important;
+
+    min-height: 190px !important;
+    padding: 35px 20px !important;
+
+    box-sizing: border-box !important;
+}
+
+main .cifras-grid .cifra > span {
+    white-space: normal !important;
+    text-align: center !important;
+}
+
+
+/* MÓVIL */
+
+@media (max-width: 700px) {
+
+    main .cifras-inicio {
+        width: 100vw !important;
+        max-width: 100vw !important;
+        margin-left: calc((100% - 100vw) / 2) !important;
+        padding: 50px 20px !important;
+    }
+
+    main .cifras-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 15px !important;
+    }
+}
+/* =========================================
+   ESTADÍSTICAS - INICIO
+   ========================================= */
+
+.estadisticas-inicio {
+    width: 100%;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 70px 40px;
+    background: #f7fafc;
+    box-sizing: border-box;
+}
+
+.estadisticas-cabecera {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.estadisticas-linea {
+    display: block;
+    width: 60px;
+    height: 4px;
+    margin: 0 auto 18px;
+    background-color: #27a6d1;
+    border-radius: 5px;
+}
+
+.estadisticas-cabecera p {
+    margin: 0 0 10px;
+    color: #27a6d1;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.estadisticas-cabecera h2 {
+    margin: 0;
+    color: #174d70;
+    font-size: 42px;
+}
+
+/* CUATRO BLOQUES */
+
+.estadisticas-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    box-sizing: border-box;
+}
+
+.estadistica {
+    min-width: 0;
+    padding: 35px 20px;
+    background: white;
+    border: 1px solid #dce7ed;
+    border-radius: 16px;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 0 8px 25px rgba(27, 77, 114, 0.08);
+}
+
+.estadistica .numero-contador {
+    display: block;
+    margin-bottom: 8px;
+    color: #18587d;
+    font-size: 58px;
+    line-height: 1;
+    font-weight: bold;
+}
+
+.estadistica > span {
+    display: block;
+    color: #526b7a;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+/* EFECTO */
+
+.estadistica {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.estadistica:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(27, 77, 114, 0.14);
+}
+
+/* MÓVIL */
+
+@media (max-width: 700px) {
+
+    .estadisticas-inicio {
+        margin: 40px 0;
+        padding: 50px 20px;
+    }
+
+    .estadisticas-cabecera h2 {
+        font-size: 32px;
+    }
+
+    .estadisticas-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .estadistica {
+        padding: 28px 12px;
+    }
+
+    .estadistica .numero-contador {
+        font-size: 45px;
+    }
+
+    .estadistica > span {
+        font-size: 15px;
+    }
+}
+/* =========================================
+   ESTADÍSTICAS - ANCHO COMPLETO
+   ========================================= */
+
+body main section.estadisticas-inicio {
+    width: 100vw !important;
+    max-width: none !important;
+
+    margin-left: calc(50% - 50vw) !important;
+    margin-right: calc(50% - 50vw) !important;
+
+    padding: 70px 6vw !important;
+
+    box-sizing: border-box !important;
+
+    background-color: #f7fafc !important;
+}
+
+body main .estadisticas-cabecera {
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: 0 auto 45px !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+}
+
+body main .estadisticas-grid {
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 25px !important;
+
+    box-sizing: border-box !important;
+}
+
+body main .estadistica {
+    width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+
+    padding: 35px 20px !important;
+
+    background: white !important;
+    border-radius: 16px !important;
+
+    text-align: center !important;
+
+    box-shadow: 0 8px 25px rgba(27, 77, 114, 0.08) !important;
+}
+
+body main .estadistica .numero-contador {
+    display: block !important;
+    font-size: 58px !important;
+    line-height: 1 !important;
+    margin-bottom: 10px !important;
+    color: #18587d !important;
+}
+
+body main .estadistica > span {
+    display: block !important;
+    font-size: 17px !important;
+    color: #526b7a !important;
+    font-weight: bold !important;
+    white-space: normal !important;
+}
+
+/* MÓVIL */
+
+@media (max-width: 700px) {
+
+    body main section.estadisticas-inicio {
+        padding: 50px 20px !important;
+    }
+
+    body main .estadisticas-grid {
+        grid-template-columns: 1fr 1fr !important;
+        gap: 15px !important;
+    }
+
+    body main .estadistica {
+        padding: 28px 10px !important;
+    }
+
+    body main .estadistica .numero-contador {
+        font-size: 45px !important;
+    }
+}
+/* EFECTO MODERNO PARA LAS TARJETAS DE INICIO */
+
+.accesos-inicio .tarjeta-acceso {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.accesos-inicio .tarjeta-acceso:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 35px rgba(0, 50, 80, 0.15);
+}
+
+.accesos-inicio .tarjeta-acceso:hover .flecha-acceso {
+    transform: translateX(6px);
+}
+
+.accesos-inicio .flecha-acceso {
+    transition: transform 0.25s ease;
+}
+/* EFECTO MODERNO PARA LAS TARJETAS DE INICIO */
+
+.accesos-inicio .tarjeta-acceso {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.accesos-inicio .tarjeta-acceso:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 35px rgba(0, 50, 80, 0.15);
+}
+
+.accesos-inicio .tarjeta-acceso:hover .flecha-acceso {
+    transform: translateX(6px);
+}
+
+.accesos-inicio .flecha-acceso {
+    transition: transform 0.25s ease;
+}
